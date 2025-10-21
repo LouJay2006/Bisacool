@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cebu Waterfalls — Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    .grid-gallery {
+      margin-top: 2rem;
+    }
+
+    .grid-gallery .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .grid-gallery figure {
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .grid-gallery figure:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .grid-gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .grid-gallery figcaption {
+      padding: 0.75rem;
+      color: #04324a;
+      font-weight: 600;
+      font-size: 0.95rem;
+      background: #f7fcff;
+      border-top: 1px solid rgba(4, 119, 200, 0.08);
+    }
+
+    @media (max-width: 700px) {
+      .grid-gallery img {
+        height: 170px;
+      }
+    }
+  </style>
+</head>
+<body class="site">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/hdkawasan.jpg" alt="Cebu Waterfalls logo" class="logo">
+        <span class="brand-text">Cebu Waterfalls</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open Menu">☰</label>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="waterfalls.html">Waterfalls</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html" class="cta">Contact</a>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Discover the Hidden Waterfalls of Cebu</h1>
+          <p class="lead">From emerald pools to cascading cliffs — explore breathtaking falls, curated travel tips, and the best routes for local adventurers.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="waterfalls.html">Explore Waterfalls</a>
+            <a class="btn ghost" href="locations.html">See Locations</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="images/kwasan.jpg" alt="Cebu waterfall" class="hero-image">
+        </div>
+      </div>
+
+      <svg class="hero-wave" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,40 C240,120 480,0 720,40 C960,80 1200,20 1440,60 L1440,110 L0,110 Z"></path>
+      </svg>
+    </section>
+  </header>
+
+  <main>
+    <section class="container intro-cards">
+      <article class="card">
+        <h3>Curated Waterfalls</h3>
+        <p>Handpicked waterfalls with photos, access difficulty, and the best time to visit.</p>
+      </article>
+      <article class="card">
+        <h3>Local Guides</h3>
+        <p>Information on local guides, permits, and safety tips to make your trip smooth.</p>
+      </article>
+      <article class="card">
+        <h3>Travel Planner</h3>
+        <p>Suggested itineraries from Cebu City to popular waterfall clusters.</p>
+      </article>
+    </section>
+
+    <section class="container spotlight">
+      <div class="spotlight-inner">
+        <div class="spotlight-media">
+          <img src="images/hdkawasan.jpg" alt="Twin falls" />
+        </div>
+        <div class="spotlight-content">
+          <h2>Kawasan-style Adventures</h2>
+          <p>Experience turquoise pools and short canyon treks. These family-friendly spots are great for day trips or overnight camping nearby.</p>
+          <a href="waterfalls.html" class="btn primary">View Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container grid-gallery">
+      <h2 class="section-title">Featured Waterfalls</h2>
+      <div class="gallery">
+        <figure>
+          <img src="images/tumalog.jpg" alt="Tumalog Falls">
+          <figcaption>Tumalog — Oslob · Easy</figcaption>
+        </figure>
+        <figure>
+          <img src="images/hdkawasan.jpg" alt="Kawasan Falls">
+          <figcaption>Kawasan Falls — Badian · Easy</figcaption>
+        </figure>
+        <figure>
+          <img src="images/inambakan.jpg" alt="Inambakan Falls">
+          <figcaption>Inambakan Falls — Ginatilan · Moderate</figcaption>
+        </figure>
+        <figure>
+          <img src="images/daofalls.jpg" alt="Dao Falls">
+          <figcaption>Dao Falls — Samboan · Moderate</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="container cta-strip">
+      <h3>Ready to plan your Cebu waterfall trip?</h3>
+      <a href="contact.html" class="btn primary large">Contact Local Guides</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="col about">
+        <h4>Cebu Waterfalls</h4>
+        <p>Showcasing the most beautiful and accessible waterfalls across Cebu. Travel responsibly and respect local communities.</p>
+        <div class="social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+
+      <div class="col links">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="waterfalls.html">Waterfalls</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col contact">
+        <h5>Contact</h5>
+        <address>
+          Email: <a href="mailto:info@cebuwaterfalls.example">info@cebuwaterfalls.example</a><br>
+          Phone: +63 912 345 6789
+        </address>
+      </div>
+
+      <div class="col newsletter">
+        <h5>Subscribe to Our Newsletter</h5>
+        <p>Get updates on Cebu’s best waterfalls and travel tips straight to your inbox.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" disabled>
+          <button class="btn small" disabled>Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>© <span id="year">2025</span> Cebu Waterfalls. All rights reserved.</small>
+      <nav class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
